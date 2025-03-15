@@ -3,10 +3,10 @@ import { useState } from "react";
 const projects = [
     {
         id: 1,
-        title: "Project One",
+        title: "Argus",
         description: "A modern web application built with React.",
         tags: ["React", "JavaScript"],
-        image: "/project1.jpg", // Replace with your actual image path
+        image: "project1.jpg", // Replace with your actual image path
         details: "This is a detailed description of Project One. It uses React and Tailwind CSS."
     },
     {
@@ -37,44 +37,80 @@ const Portfolio = () => {
         selectedTag === "All" ? projects : projects.filter(project => project.tags.includes(selectedTag));
 
     return (
-        <section className="py-16 px-6 text-center w-full">
-            <h2 className="text-3xl font-bold text-white mb-10 mt-0">Portfolio</h2>
+        <section id="portfolio" className="py-16 px-6 text-center w-full">
+            <h2 className="text-3xl font-bold text-white mb-4 mt-0">Portfolio</h2>
             <div className="max-w-6xl mx-auto px-6">
                 {/* Tags for Filtering */}
-                <div className="flex flex-wrap justify-center gap-3 mb-6">
-                    {tags.map(tag => (
-                        <button
-                            key={tag}
-                            className={`px-4 py-2 rounded-md transition ${selectedTag === tag ? "bg-[#DAA520] text-black" : "bg-gray-700 text-white hover:bg-[#DAA520] hover:text-black"
-                                }`}
-                            onClick={() => setSelectedTag(tag)}
+                <div className="mb-6">
+                    {/* Show a Dropdown on Small Screens */}
+                    <div className="md:hidden">
+                        <select
+                            className="bg-gray-700 text-white px-4 py-2 rounded-md w-full"
+                            value={selectedTag}
+                            onChange={(e) => setSelectedTag(e.target.value)}
                         >
-                            {tag}
-                        </button>
-                    ))}
+                            {tags.map(tag => (
+                                <option key={tag} value={tag}>{tag}</option>
+                            ))}
+                        </select>
+                    </div>
+
+                    {/* Show Buttons on Larger Screens */}
+                    <div className="hidden md:flex flex-wrap justify-center gap-3">
+                        {tags.map(tag => (
+                            <button
+                                key={tag}
+                                className={`px-4 py-2 rounded-md transition-all duration-300 ${selectedTag === tag
+                                        ? "bg-[#DAA520] text-black"
+                                        : "!bg-[#111111] text-white border border-[#222222] hover:bg-[#DAA520] hover:text-black"
+                                    }`}
+                                onClick={() => setSelectedTag(tag)}
+                            >
+                                {tag}
+                            </button>
+                        ))}
+                    </div>
                 </div>
+
 
                 {/* Project Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {filteredProjects.map(project => (
                         <div
                             key={project.id}
-                            className="bg-gray-800 p-4 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer"
+                            className="relative bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition cursor-pointer overflow-hidden h-64 border-1 border-transparent hover:border-[#DAA520]"
                             onClick={() => setSelectedProject(project)}
                         >
-                            <img src={project.image} alt={project.title} className="w-full h-40 object-cover rounded-md mb-4" />
-                            <h3 className="text-xl font-semibold text-white">{project.title}</h3>
-                            <p className="text-gray-400 text-sm">{project.description}</p>
-                            <div className="mt-2 flex flex-wrap gap-2">
-                                {project.tags.map(tag => (
-                                    <span key={tag} className="text-xs bg-gray-600 px-2 py-1 rounded-md text-white">
-                                        {tag}
-                                    </span>
-                                ))}
+                            {/* Project Image (Top-Left Justified) */}
+                            <img
+                                src={project.image}
+                                alt={project.title}
+                                className="w-full h-full object-cover object-top-left rounded-md"
+                            />
+
+                            {/* Text Overlay with Centered Content */}
+                            <div
+                                className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 z-10 transition duration-300"
+                                style={{ backgroundColor: "rgba(0, 0, 0, 0.7)" }}
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "rgba(0, 0, 0, 0.8)"}
+                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "rgba(0, 0, 0, 0.7)"}
+                            >
+                                <h3 className="text-lg font-semibold text-white">{project.title}</h3>
+                                <p className="text-gray-300 text-sm mt-2">{project.description}</p>
+
+                                {/* Tags (Inside the Overlay at the Bottom) */}
+                                <div className="absolute bottom-4 left-4 flex flex-wrap gap-2">
+                                    {project.tags.map(tag => (
+                                        <span key={tag} className="text-xs bg-gray-900 px-2 py-1 rounded-md text-white">
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     ))}
                 </div>
+
 
                 {/* Modal for Project Details */}
                 {selectedProject && (
