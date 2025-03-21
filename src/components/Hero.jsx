@@ -16,10 +16,10 @@ const Hero = () => {
                 <div className="max-w-lg">
                     <h1 className="text-3xl md:text-5xl font-bold text-white">Zarrar Khan, Ph.D.</h1>
                     <h2 className="mt-2 text-xl text-gray-300 font-medium">
-                        Computational Scientist | Climate Change | Full Stack
+                        Scientist | Developer | Climate Expert
                     </h2>
                     <p className="mt-4 text-gray-400">
-                        Computational scientist and software engineer specializing in large-scale simulations, high-performance computing, and multi-sector modeling. Expert in Python, R, JavaScript, GIS, and cloud computing. 30+ publications, 800+ citations, and speaker at COP, AGU, and EGU.
+                        Computational scientist and software engineer specializing in large-scale simulations, high-performance computing, and multi-sector modeling. Expert in Python, R, JavaScript, GIS, and cloud computing. 30+ publications, 800+ citations, chair at AGU, EGU, COP.
                     </p>
                 </div>
             </section>

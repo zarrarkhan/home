@@ -11,7 +11,7 @@ const Navbar = () => {
         {/* Social Icons (Top Left) */}
         <div className="flex space-x-4">
           <a
-            href="https://scholar.google.com/citations?user=YOUR_ID"
+            href="https://scholar.google.com/citations?user=zcsC9EMAAAAJ&hl=en"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 text-xl hover:text-[#DAA520] transition"
@@ -19,7 +19,7 @@ const Navbar = () => {
             <SiGooglescholar />
           </a>
           <a
-            href="https://www.linkedin.com/in/YOUR_PROFILE"
+            href="https://www.linkedin.com/in/khanzarrar/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 text-xl hover:text-[#DAA520] transition"
@@ -27,7 +27,7 @@ const Navbar = () => {
             <FaLinkedin />
           </a>
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:zarrar85@gmail.com"
             className="text-gray-300 text-xl hover:text-[#DAA520] transition"
           >
             <FaEnvelope />
