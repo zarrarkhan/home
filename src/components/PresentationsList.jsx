@@ -1,5 +1,5 @@
 
-const presentations = [
+export const presentations = [
   <li>
     <strong>(Chaired)</strong> Wild, T.B., <strong>Khan, Z.</strong>, Awais, M., Andrijevic, M., Niazi, H., and Taniguchi, M. “Multisector Dynamics: Energy-Water-Land Interactions and Adaptations at Multiple Scales II,” <em>AGU Fall Meeting</em>, Dec 2024.{" "}
     <a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Session/233882" target="_blank" rel="noopener noreferrer" className="text-[#DAA520] hover:underline">

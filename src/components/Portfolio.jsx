@@ -386,7 +386,7 @@ const Portfolio = () => {
                                     onClick={() => setSelectedTag(selectedTag === filter ? "All" : filter)}
                                     className={`${base} ${isTheme ? themeStyle : tagStyle}`}
                                 >
-                                    {filter}
+                                    {filter === "All" ? `All (${projects.length})` : filter}
                                 </button>
                             );
                         })}
