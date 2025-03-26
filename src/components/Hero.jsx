@@ -22,6 +22,7 @@ const Hero = () => {
                         Computational scientist and software engineer specializing in large-scale simulations, high-performance computing, and multi-sector modeling. Expert in Python, R, JavaScript, GIS, and cloud computing. 30+ publications, 800+ citations, chair at AGU, EGU, COP.
                     </p>
                 </div>
+                
             </section>
         </>
     );
