@@ -15,6 +15,23 @@ import {
 const projects = [
     {
         id: 1,
+        title: "Argus",
+        description: "An interactive Shiny dashboard for exploring land-energy-water system scenarios.",
+        tags: ["R", "Shiny"],
+        themes: ["Multisector", "Data Viz"],
+        image: "project_argus.jpg",
+        details: "Argus is a scenario exploration tool developed using R and Shiny to visualize and interact with integrated assessment model outputs. It provides users with an intuitive dashboard to explore trends, compare scenarios, and examine land-energy-water system linkages across spatial and temporal scales. Designed for researchers and stakeholders, Argus enhances transparency and usability of complex data.",
+        links: {
+            webpage: "https://jgcri.shinyapps.io/argus/",
+            github: null,
+            userdocs: "https://jgcri.github.io/argus",
+            app: "https://jgcri.shinyapps.io/argus/",
+            paper1: null,
+            paper2: null
+        }
+    },
+    {
+        id: 2,
         title: "Thenics4All",
         description: "A minimalist web platform for documenting and sharing calisthenics progress in a collaborative community.",
         tags: ["React", "JavaScript", "Node.js", "Python", "AWS"],
@@ -23,23 +40,6 @@ const projects = [
         details: "Thenics4All is a self-hosted platform built to support goal tracking, resource sharing, and community-driven learning in calisthenics. It emphasizes accessibility, transparency, and long-term progress through open content and personal dashboards. Designed for scalability and user interaction, it's a lightweight and modular frontend-first application.",
         links: {
             webpage: "https://www.thenics4all.com",
-            github: null,
-            userdocs: null,
-            app: null,
-            paper1: null,
-            paper2: null
-        }
-    },
-    {
-        id: 2,
-        title: "Wealthguard",
-        description: "A web-based dashboard for visualizing financial data, focused on real estate investment trusts (REITs) and market trends.",
-        tags: ["React", "JavaScript", "Node.js", "Python"],
-        themes: ["Finance", "Data Viz"],
-        image: "project_wealthguard.jpg",
-        details: "Wealthguard is a financial dashboard application that helps users monitor REIT performance and market dynamics. Built with a modern React frontend and Node.js backend, it integrates cloud functions and real-time data pipelines to support scalable, responsive financial analytics. Designed for clarity and usability, the platform provides investors with intuitive visual insights.",
-        links: {
-            webpage: "https://wealthguard-frontend.vercel.app/reits",
             github: null,
             userdocs: null,
             app: null,
@@ -66,23 +66,6 @@ const projects = [
     },
     {
         id: 4,
-        title: "Argus",
-        description: "An interactive Shiny dashboard for exploring land-energy-water system scenarios.",
-        tags: ["R", "Shiny"],
-        themes: ["Multisector", "Data Viz"],
-        image: "project_argus.jpg",
-        details: "Argus is a scenario exploration tool developed using R and Shiny to visualize and interact with integrated assessment model outputs. It provides users with an intuitive dashboard to explore trends, compare scenarios, and examine land-energy-water system linkages across spatial and temporal scales. Designed for researchers and stakeholders, Argus enhances transparency and usability of complex data.",
-        links: {
-            webpage: "https://jgcri.shinyapps.io/argus/",
-            github: null,
-            userdocs: "https://jgcri.github.io/argus",
-            app: "https://jgcri.shinyapps.io/argus/",
-            paper1: null,
-            paper2: null
-        }
-    },
-    {
-        id: 5,
         title: "Rfasst",
         description: "An R package for estimating air pollution impacts on health and agriculture.",
         tags: ["R"],
@@ -99,7 +82,7 @@ const projects = [
         }
     },
     {
-        id: 6,
+        id: 5,
         title: "Osiris",
         description: "An R package to process climate impacts on crop yields for integrated assessment models.",
         tags: ["R"],
@@ -116,7 +99,7 @@ const projects = [
         }
     },
     {
-        id: 7,
+        id: 6,
         title: "Helios",
         description: "An R package for calculating heating and cooling degree days for energy modeling.",
         tags: ["R"],
@@ -133,7 +116,7 @@ const projects = [
         }
     },
     {
-        id: 8,
+        id: 7,
         title: "rmap",
         description: "An R package for creating customizable, scenario-based maps from tabular data.",
         tags: ["R"],
@@ -150,7 +133,7 @@ const projects = [
         }
     },
     {
-        id: 9,
+        id: 8,
         title: "Tethys",
         description: "A Python package for spatial and temporal downscaling of global water demand.",
         tags: ["Python"],
@@ -167,7 +150,7 @@ const projects = [
         }
     },
     {
-        id: 10,
+        id: 9,
         title: "Global Wateruse",
         description: "A global dataset of monthly sectoral water use from 2010–2100 at 0.5° resolution.",
         tags: ["HTML/CSS"],
@@ -184,7 +167,7 @@ const projects = [
         }
     },
     {
-        id: 11,
+        id: 10,
         title: "Plutus",
         description: "An R package to estimate electricity investments and stranded assets in GCAM.",
         tags: ["R"],
@@ -201,7 +184,7 @@ const projects = [
         }
     },
     {
-        id: 12,
+        id: 11,
         title: "Metis",
         description: "An R package for harmonizing and visualizing multi-sectoral systems data across scales.",
         tags: ["R"],
@@ -218,7 +201,7 @@ const projects = [
         }
     },
     {
-        id: 13,
+        id: 12,
         title: "Net-Zero SE Asia",
         description: "A curated repository and visualization platform for carbon neutrality pathways in Southeast Asia.",
         tags: ["HTML/CSS"],
@@ -235,7 +218,7 @@ const projects = [
         }
     },
     {
-        id: 14,
+        id: 13,
         title: "GCIMS Integration",
         description: "A landing page and repository for multi-model integration using GCIMS outputs.",
         tags: ["HTML/CSS"],
@@ -252,7 +235,7 @@ const projects = [
         }
     },
     {
-        id: 15,
+        id: 14,
         title: "pytemplate",
         description: "A lightweight project template for Python packages following JGCRI standards.",
         tags: ["Python", "HTML/CSS"],
@@ -269,7 +252,7 @@ const projects = [
         }
     },
     {
-        id: 16,
+        id: 15,
         title: "rtemplate",
         description: "An opinionated R project template with documentation, testing, and GitHub workflows.",
         tags: ["R", "HTML/CSS"],
@@ -280,6 +263,23 @@ const projects = [
             webpage: "https://jgcri.github.io/rtemplate/",
             github: "https://github.com/JGCRI/rtemplate/",
             userdocs: "https://jgcri.github.io/rtemplate/",
+            app: null,
+            paper1: null,
+            paper2: null
+        }
+    },
+    {
+        id: 16,
+        title: "Wealthguard",
+        description: "A web-based dashboard for visualizing financial data, focused on real estate investment trusts (REITs) and market trends.",
+        tags: ["React", "JavaScript", "Node.js", "Python"],
+        themes: ["Finance", "Data Viz"],
+        image: "project_wealthguard.jpg",
+        details: "Wealthguard is a financial dashboard application that helps users monitor REIT performance and market dynamics. Built with a modern React frontend and Node.js backend, it integrates cloud functions and real-time data pipelines to support scalable, responsive financial analytics. Designed for clarity and usability, the platform provides investors with intuitive visual insights.",
+        links: {
+            webpage: "https://wealthguard-frontend.vercel.app/reits",
+            github: null,
+            userdocs: null,
             app: null,
             paper1: null,
             paper2: null
