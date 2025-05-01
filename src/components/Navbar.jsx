@@ -59,7 +59,7 @@ const Navbar = () => {
                 <FaChalkboardTeacher className="text-sm" /> Presentations
               </a>
             </li>
-            <li>
+            {/*<li>
               <a
                 href="ZarrarKhanCV.pdf"
                 download="ZarrarKhanCV.pdf"
@@ -68,6 +68,7 @@ const Navbar = () => {
                 CV <FaDownload className="text-sm" />
               </a>
             </li>
+            */}
           </ul>
 
           {/* Mobile Menu Button */}
