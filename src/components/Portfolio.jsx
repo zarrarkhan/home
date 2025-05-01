@@ -66,57 +66,6 @@ const projects = [
     },
     {
         id: 4,
-        title: "Rfasst",
-        description: "An R package for estimating air pollution impacts on health and agriculture.",
-        tags: ["R"],
-        themes: ["Health"],
-        image: "project_rfasst.jpg",
-        details: "RFASST is an R package designed to quantify the effects of air pollution on human health and agricultural productivity. It supports integration with global climate and energy models, enabling impact assessments across multiple sectors and spatial scales. Developed for researchers and policymakers, RFASST emphasizes reproducibility, transparency, and scientific rigor.",
-        links: {
-            webpage: null,
-            github: "https://github.com/JGCRI/rfasst/",
-            userdocs: "https://jgcri.github.io/rfasst/index.html",
-            app: null,
-            paper1: "https://joss.theoj.org/papers/10.21105/joss.03820",
-            paper2: null
-        }
-    },
-    {
-        id: 5,
-        title: "Osiris",
-        description: "An R package to process climate impacts on crop yields for integrated assessment models.",
-        tags: ["R"],
-        themes: ["Ag", "Climate"],
-        image: "project_osiris.jpg",
-        details: "Osiris is an R package developed to process gridded climate impacts on agricultural yields for use in integrated assessment models like GCAM. It supports spatial aggregation, data harmonization, and yield scaling across regions and crop types, enabling robust analysis of climate-driven changes to food systems.",
-        links: {
-            webpage: null,
-            github: "https://github.com/JGCRI/osiris",
-            userdocs: "https://jgcri.github.io/osiris/",
-            app: null,
-            paper1: "https://doi.org/10.21105/joss.05226",
-            paper2: null
-        }
-    },
-    {
-        id: 6,
-        title: "Helios",
-        description: "An R package for calculating heating and cooling degree days for energy modeling.",
-        tags: ["R"],
-        themes: ["Energy", "Climate"],
-        image: "project_helios.jpg",
-        details: "Helios is an R package designed to process temperature data into heating and cooling degree day indicators for integration with the Global Change Analysis Model (GCAM). It enables the assessment of building energy demand under varying climate scenarios, supporting robust energy system planning.",
-        links: {
-            webpage: null,
-            github: "https://github.com/JGCRI/helios/",
-            userdocs: "https://jgcri.github.io/helios",
-            app: null,
-            paper1: "https://doi.org/10.21105/joss.06033",
-            paper2: null
-        }
-    },
-    {
-        id: 7,
         title: "rmap",
         description: "An R package for creating customizable, scenario-based maps from tabular data.",
         tags: ["R"],
@@ -133,24 +82,7 @@ const projects = [
         }
     },
     {
-        id: 8,
-        title: "Tethys",
-        description: "A Python package for spatial and temporal downscaling of global water demand.",
-        tags: ["Python"],
-        themes: ["Water", "Climate"],
-        image: "project_tethys.jpg",
-        details: "Tethys is a Python tool that performs spatiotemporal downscaling of global water demand projections for use in integrated assessment models. It supports high-resolution sectoral water use estimates across time and regions, enabling better-informed planning under future climate and socioeconomic scenarios.",
-        links: {
-            webpage: null,
-            github: "https://github.com/JGCRI/tethys",
-            userdocs: "https://jgcri.github.io/tethys/",
-            app: null,
-            paper1: "https://doi.org/10.21105/joss.05855",
-            paper2: null
-        }
-    },
-    {
-        id: 9,
+        id: 5,
         title: "Global Wateruse",
         description: "A global dataset of monthly sectoral water use from 2010–2100 at 0.5° resolution.",
         tags: ["HTML/CSS"],
@@ -167,41 +99,7 @@ const projects = [
         }
     },
     {
-        id: 10,
-        title: "Plutus",
-        description: "An R package to estimate electricity investments and stranded assets in GCAM.",
-        tags: ["R"],
-        themes: ["Energy", "Finance"],
-        image: "project_plutus.jpg",
-        details: "Plutus is an R package for analyzing electricity system investments and stranded assets within the Global Change Analysis Model (GCAM). It supports scenario analysis of energy transitions, infrastructure lifetimes, and policy-driven outcomes, with a focus on decarbonization and asset risk.",
-        links: {
-            webpage: null,
-            github: "https://github.com/JGCRI/plutus",
-            userdocs: "https://jgcri.github.io/plutus/",
-            app: null,
-            paper1: "https://doi.org/10.21105/joss.03212",
-            paper2: null
-        }
-    },
-    {
-        id: 11,
-        title: "Metis",
-        description: "An R package for harmonizing and visualizing multi-sectoral systems data across scales.",
-        tags: ["R"],
-        themes: ["Multisector"],
-        image: "project_metis.jpg",
-        details: "Metis is a flexible R toolkit for visualizing and analyzing multi-sector systems data. It supports cross-sectoral harmonization, time-series visualization, and mapping at global to regional scales. Designed to interface with integrated assessment models, Metis helps explore interdependencies across energy, water, land, and agriculture.",
-        links: {
-            webpage: null,
-            github: "https://github.com/JGCRI/metis/",
-            userdocs: "https://jgcri.github.io/metis/",
-            app: null,
-            paper1: "http://doi.org/10.5334/jors.292",
-            paper2: null
-        }
-    },
-    {
-        id: 12,
+        id: 6,
         title: "Net-Zero SE Asia",
         description: "A curated repository and visualization platform for carbon neutrality pathways in Southeast Asia.",
         tags: ["HTML/CSS"],
@@ -218,7 +116,24 @@ const projects = [
         }
     },
     {
-        id: 13,
+        id: 7,
+        title: "Osiris",
+        description: "An R package to process climate impacts on crop yields for integrated assessment models.",
+        tags: ["R"],
+        themes: ["Ag", "Climate"],
+        image: "project_osiris.jpg",
+        details: "Osiris is an R package developed to process gridded climate impacts on agricultural yields for use in integrated assessment models like GCAM. It supports spatial aggregation, data harmonization, and yield scaling across regions and crop types, enabling robust analysis of climate-driven changes to food systems.",
+        links: {
+            webpage: null,
+            github: "https://github.com/JGCRI/osiris",
+            userdocs: "https://jgcri.github.io/osiris/",
+            app: null,
+            paper1: "https://doi.org/10.21105/joss.05226",
+            paper2: null
+        }
+    },
+    {
+        id: 8,
         title: "GCIMS Integration",
         description: "A landing page and repository for multi-model integration using GCIMS outputs.",
         tags: ["HTML/CSS"],
@@ -231,6 +146,91 @@ const projects = [
             userdocs: null,
             app: null,
             paper1: null,
+            paper2: null
+        }
+    },
+    {
+        id: 9,
+        title: "Helios",
+        description: "An R package for calculating heating and cooling degree days for energy modeling.",
+        tags: ["R"],
+        themes: ["Energy", "Climate"],
+        image: "project_helios.jpg",
+        details: "Helios is an R package designed to process temperature data into heating and cooling degree day indicators for integration with the Global Change Analysis Model (GCAM). It enables the assessment of building energy demand under varying climate scenarios, supporting robust energy system planning.",
+        links: {
+            webpage: null,
+            github: "https://github.com/JGCRI/helios/",
+            userdocs: "https://jgcri.github.io/helios",
+            app: null,
+            paper1: "https://doi.org/10.21105/joss.06033",
+            paper2: null
+        }
+    },
+    {
+        id: 10,
+        title: "Tethys",
+        description: "A Python package for spatial and temporal downscaling of global water demand.",
+        tags: ["Python"],
+        themes: ["Water", "Climate"],
+        image: "project_tethys.jpg",
+        details: "Tethys is a Python tool that performs spatiotemporal downscaling of global water demand projections for use in integrated assessment models. It supports high-resolution sectoral water use estimates across time and regions, enabling better-informed planning under future climate and socioeconomic scenarios.",
+        links: {
+            webpage: null,
+            github: "https://github.com/JGCRI/tethys",
+            userdocs: "https://jgcri.github.io/tethys/",
+            app: null,
+            paper1: "https://doi.org/10.21105/joss.05855",
+            paper2: null
+        }
+    },
+    {
+        id: 11,
+        title: "Plutus",
+        description: "An R package to estimate electricity investments and stranded assets in GCAM.",
+        tags: ["R"],
+        themes: ["Energy", "Finance"],
+        image: "project_plutus.jpg",
+        details: "Plutus is an R package for analyzing electricity system investments and stranded assets within the Global Change Analysis Model (GCAM). It supports scenario analysis of energy transitions, infrastructure lifetimes, and policy-driven outcomes, with a focus on decarbonization and asset risk.",
+        links: {
+            webpage: null,
+            github: "https://github.com/JGCRI/plutus",
+            userdocs: "https://jgcri.github.io/plutus/",
+            app: null,
+            paper1: "https://doi.org/10.21105/joss.03212",
+            paper2: null
+        }
+    },
+    {
+        id: 12,
+        title: "Metis",
+        description: "An R package for harmonizing and visualizing multi-sectoral systems data across scales.",
+        tags: ["R"],
+        themes: ["Multisector"],
+        image: "project_metis.jpg",
+        details: "Metis is a flexible R toolkit for visualizing and analyzing multi-sector systems data. It supports cross-sectoral harmonization, time-series visualization, and mapping at global to regional scales. Designed to interface with integrated assessment models, Metis helps explore interdependencies across energy, water, land, and agriculture.",
+        links: {
+            webpage: null,
+            github: "https://github.com/JGCRI/metis/",
+            userdocs: "https://jgcri.github.io/metis/",
+            app: null,
+            paper1: "http://doi.org/10.5334/jors.292",
+            paper2: null
+        }
+    },
+    {
+        id: 13,
+        title: "Rfasst",
+        description: "An R package for estimating air pollution impacts on health and agriculture.",
+        tags: ["R"],
+        themes: ["Health"],
+        image: "project_rfasst.jpg",
+        details: "RFASST is an R package designed to quantify the effects of air pollution on human health and agricultural productivity. It supports integration with global climate and energy models, enabling impact assessments across multiple sectors and spatial scales. Developed for researchers and policymakers, RFASST emphasizes reproducibility, transparency, and scientific rigor.",
+        links: {
+            webpage: null,
+            github: "https://github.com/JGCRI/rfasst/",
+            userdocs: "https://jgcri.github.io/rfasst/index.html",
+            app: null,
+            paper1: "https://joss.theoj.org/papers/10.21105/joss.03820",
             paper2: null
         }
     },
